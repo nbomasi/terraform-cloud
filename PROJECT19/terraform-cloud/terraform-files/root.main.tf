@@ -27,7 +27,7 @@ module "AutoScaling" {
   ami-nginx         = var.ami-nginx
   ami-ubuntu        = var.ami-ubuntu
   desired_capacity  = 1
-  min_size          = 2
+  min_size          = 1
   max_size          = 2
   web-sg            = [module.security.web-sg]
   bastion-sg        = [module.security.bastion-sg]
@@ -60,7 +60,7 @@ module "RDS" {
   master-username        = var.master-username
   master-password        = var.master-password
   db-username = var.db-username
-  private_subnet-3      = module.VPC.private_subnet-4
+  private_subnet-3      = module.VPC.private_subnet-3
   private_subnet-4      = module.VPC.private_subnet-4
   vpc_security_group_ids = module.security.datalayer-sg
 }

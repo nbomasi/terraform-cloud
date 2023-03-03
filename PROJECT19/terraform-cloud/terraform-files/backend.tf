@@ -14,7 +14,7 @@
 
 
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "boma-dev-terraform-bucket"
+  bucket = "osasboma-dev-terraform-bucket"
 }
 
 resource "aws_s3_bucket_versioning" "s3_version" {
@@ -57,7 +57,7 @@ resource "aws_dynamodb_table" "terraform_locks" {
 # Configuring s3 bucket
 terraform {
   backend "s3" {
-    bucket         = "boma-dev-terraform-bucket"
+    bucket         = "osasboma-dev-terraform-bucket"
     key            = "global/s3/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-locks"
