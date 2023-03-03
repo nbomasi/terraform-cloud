@@ -1,11 +1,10 @@
-variable "region" {
+variable "region" {}
   #default = "eu-central-1"
-  default = "us-east-1"
-}
+ # default = "us-east-1"
 
-variable "vpc_cidr" {
-  default = "172.16.0.0/16"
-}
+
+variable "vpc_cidr" {}
+
 
 variable "enable_dns_support" {
   default = "true"

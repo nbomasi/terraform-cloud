@@ -89,3 +89,13 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "ami-ubuntu" {
+  type        = string
+  description = "ami for ubuntu"
+}
+
+variable "ami-web" {
+  type        = string
+  description = "ami for for tooling and wordpress"
+}
