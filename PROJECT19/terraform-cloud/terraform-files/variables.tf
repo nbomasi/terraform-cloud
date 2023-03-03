@@ -72,3 +72,24 @@ variable "db-username" {}
 
 variable "environment" {}
 
+variable "ami-nginx" {
+  type        = string
+  description = "ami for nginx"
+}
+
+variable "ami-ubuntu" {
+  type        = string
+  description = "ami for ubuntu"
+}
+
+variable "ami-web" {
+  type        = string
+  description = "ami for webservers"
+}
+
+variable "ami-bastion" {
+  type        = string
+  description = "ami for bastion"
+}
+
+
