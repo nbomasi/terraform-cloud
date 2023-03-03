@@ -22,9 +22,10 @@ module "security" {
 # Autoscaling module takes care of ami image, templates and all boostrapping/userdata
 module "AutoScaling" {
   source            = "./modules/autoscaling"
-  ami-web           = var.ami
-  ami-bastion       = var.ami
-  ami-nginx         = var.ami
+  ami-web           = var.ami-web
+  ami-bastion       = var.ami-bastion
+  ami-nginx         = var.ami-nginx
+  ami-ubuntu         = var.ami-ubuntu
   desired_capacity  = 1
   min_size          = 2
   max_size          = 2
