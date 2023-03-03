@@ -1,14 +1,14 @@
 # In project 18, we used AWS S3 as our backend,
 # but in project19 we will use TERRAFORM CLOUD
-terraform {
-  backend "remote" {
-    organization = "Smile-Nigeria"
+# terraform {
+#   backend "remote" {
+#     organization = "Smile-Nigeria"
 
-    workspaces {
-      name = "PROJECT19-TERRAFORM-CLOUD"
-    }
-  }
-}
+#     workspaces {
+#       name = "PROJECT19-TERRAFORM-CLOUD"
+#     }
+#   }
+# }
 
 
 
