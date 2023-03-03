@@ -2,7 +2,7 @@ module "VPC" {
   source               = "./modules/VPC"
   region               = var.region
   vpc_cidr             = var.vpc_cidr
-  access_ip            = var.access_ip
+  #access_ip            = var.access_ip
   environment          = var.environment
   enable_dns_support   = var.enable_dns_support
   enable_dns_hostnames = var.enable_dns_support
@@ -25,7 +25,7 @@ module "AutoScaling" {
   ami-web           = var.ami-web
   ami-bastion       = var.ami-bastion
   ami-nginx         = var.ami-nginx
-  ami-ubuntu         = var.ami-ubuntu
+  ami-ubuntu        = var.ami-ubuntu
   desired_capacity  = 1
   min_size          = 2
   max_size          = 2

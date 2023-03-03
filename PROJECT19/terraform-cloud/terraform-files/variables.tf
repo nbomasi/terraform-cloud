@@ -14,7 +14,7 @@ variable "enable_dns_hostnames" {
   default = "true"
 }
 
-variable "access_ip" {}
+#variable "access_ip" {}
 # variable "enable_classiclink" {
 #     default = "false"
 # }
@@ -43,10 +43,10 @@ variable "name" {
   default = "ACS"
 }
 
-variable "ami" {
-  type        = string
-  description = "AMI ID for the launch template"
-}
+# variable "ami" {
+#   type        = string
+#   description = "AMI ID for the launch template"
+# }
 
 variable "keypair" {
   type        = string
