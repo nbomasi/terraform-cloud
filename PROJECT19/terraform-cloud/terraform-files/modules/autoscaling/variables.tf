@@ -95,7 +95,7 @@ variable "ami-ubuntu" {
   description = "ami for ubuntu"
 }
 
-variable "ami-web" {
-  type        = string
-  description = "ami for for tooling and wordpress"
-}
+# variable "ami-web" {
+#   type        = string
+#   description = "ami for for tooling and wordpress"
+# }
