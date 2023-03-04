@@ -67,8 +67,8 @@ module "RDS" {
 
 module "EFS" {
   source              = "./modules/EFS"
-  efs1_subnet_id      = module.VPC.private_subnet-3
-  efs2_subnet_id      = module.VPC.private_subnet-4
+  efs1_subnet_id      = module.VPC.private_subnet-1
+  efs2_subnet_id      = module.VPC.private_subnet-2
   efs_security_groups = module.security.datalayer-sg
   account_no = var.account_no
 }
