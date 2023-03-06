@@ -47,10 +47,6 @@ Cost, Security, and Scalability are the major requirements for this project. Hen
 
 The tooling code is stored in this [repository]((https://github.com/Livingstone95/tooling))
 
-Always refer to the given diagram
-
-![project image](./tooling_project_15.png)
-
 
 
 ## install graphviz 
