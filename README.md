@@ -18,11 +18,12 @@ Packer is an open source tool for creating identical machine images for multiple
 
 **Installing Packer:** 
 
-Packer was installed with chocolatey pcakage manager with the following command: ```markdown
+Packer was installed with chocolatey package manager with the following command:
+```markdown
 choco install packer
-```
 
-## BOTO
+```
+**BOTO**
 
 Boto is a software development kit (SDK) designed to improve the use of the Python programming language in Amazon Web Services. The Boto project started as a customer-contributed library to help developers build Python-based applications in the cloud, converting application programming interface (API) responses from AWS into Python classes.
 
@@ -59,7 +60,7 @@ sudo apt install graphviz
 - terraform graph -type=plan | dot -Tpng > graph.png
 - terraform graph  | dot -Tpng > graph.png
 
-## Read More abot terrafrom graph
+## Read More about terrafrom graph
 https://www.terraform.io/docs/cli/commands/graph.html
 
 
@@ -101,3 +102,5 @@ https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
 5. The servers could not download from the internet: I had to create route table using Natgateway as route
 
 6. Target groups were not automatically registered: I had to manually register them before my instances could be healthy
+
+7. Pip installation was not in the user data for creating AMIs, hence, boto and boto3 were not automatical installed: I had to install manualy, I have corrected the script though.
