@@ -104,3 +104,5 @@ https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
 6. Target groups were not automatically registered: I had to manually register them before my instances could be healthy
 
 7. Pip installation was not in the user data for creating AMIs, hence, boto and boto3 were not automatical installed: I had to install manualy, I have corrected the script though.
+
+8. Although, the wordpress site did not open though, but tooling opens as expected
