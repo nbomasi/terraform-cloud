@@ -104,5 +104,4 @@ https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
 8. Although, the wordpress site did not open though, but tooling opens as expected
 
 Final Image:
-
-![Tooling-sit](../../../Tooling-image.png)
+![boma](PROJECT19/terraform-cloud/tooling_project_15.png)
