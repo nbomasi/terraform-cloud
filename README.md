@@ -105,4 +105,4 @@ https://medium.com/risan/upgrade-your-ssh-key-to-ed25519-c6e8d60d3c54
 
 Project 19 result:
 
-"D:\Tooling-image.png"
+![Tooling-site](../../../Tooling-image.png)
